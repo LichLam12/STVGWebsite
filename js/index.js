@@ -1,6 +1,14 @@
 $(document).ready(function() {
-    
-    $('#p1-bannerinfo').delay = 1.2s;
-    $('#p1-bannerinfo').opacity = 0;
-    
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
 });

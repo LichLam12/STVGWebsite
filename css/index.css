@@ -20,9 +20,9 @@
     -moz-transition: transform 0.6s ease-in-out;
     -webkit-transition: transform 0.6s ease-in-out;
     -webkit-animation-name: logo-effect; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1.5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
     animation-name: logo-effect;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 .p1-img-logo:hover{
     transform-style: preserve-3d;
@@ -47,12 +47,14 @@
     font-size: 52px;
     font-weight: 0;
     letter-spacing: 1px;
-    opacity: 1;
-    -webkit-animation-name: opcacity01; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: opcacity01;
-    animation-duration: 4s;
+    position: relative;
+    -webkit-animation-name: opcacity-top; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: opcacity-top;
+    animation-duration: 2s;
+/*
     animation-delay: 0.8s;
+*/
 }
 .p1-p-mission{
     font-family: 'Montserrat',sans-serif;
@@ -60,49 +62,57 @@
     color: #bcbcbc;
     text-transform: uppercase;
     font-weight: 0;
-    opacity: 1;
     letter-spacing: 0.8px;
     padding: 16px 0 28px;
-    -webkit-animation-name: opcacity01; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: opcacity01;
-    animation-duration: 4s;
-    animation-delay: 0.8s;
+    position: relative;
+    -webkit-animation-name: opcacity-bottom; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: opcacity-bottom;
+    animation-duration: 2s;
+   /* animation-delay: 0.8s;*/
 }
 .p1-a-more{
     font-family: 'Montserrat', sans-serif;
-    background: #7cc576;
+    background: #66cc5e;
     color: #fff;
     font-size: 18px;
-    font-weight: 400;
-    opacity: 1;
-    letter-spacing: 0.4px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
     padding: 18px 32px;
+    margin-right: 0.5rem;
     text-transform: uppercase;
     border-radius: 3px;
+    position: relative;
     /*transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;*/
-    -webkit-animation-name: button-scale; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
-    animation-name: button-scale;
-    animation-duration: 4s;
-    animation-delay: 0.8s;
+    -webkit-animation-name: opcacity-bottom; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: opcacity-bottom;
+    animation-duration: 2s;
+    /*animation-delay: 0.8s;*/
 }
 .p1-a-more:hover{
-    color: #7cc576;
+    color: #48b13f;
     background: #f0eeee;
     text-decoration: none;
-    font-weight: 500;
 }
 /* Effect 1 */
-    @-webkit-keyframes opcacity01 { /* Safari 4.0 - 8.0 */
-      from {opacity: 0}
-      to {opacity: 1}
+    @-webkit-keyframes opcacity-top { /* Safari 4.0 - 8.0 */
+      from {opacity: 0; top: -30px;}
+      to {opacity: 1; top: 0;}
     }
-    @keyframes opcacity01 { /* Standard syntax */
-      from {opacity: 0}
-      to {opacity: 1}
+    @keyframes opcacity-top { /* Standard syntax */
+      from {opacity: 0; top: -30px;}
+      to {opacity: 1; top: 0;}
+    }
+    @-webkit-keyframes opcacity-bottom { /* Safari 4.0 - 8.0 */
+      from {opacity: 0; bottom: -30px;}
+      to {opacity: 1; bottom: 0;}
+    }
+    @keyframes opcacity-bottom { /* Standard syntax */
+      from {opacity: 0; bottom: -30px;}
+      to {opacity: 1; bottom: 0;}
     }
 /* Effect 2 */
     @-webkit-keyframes logo-effect {
@@ -139,13 +149,75 @@
         -moz-transition: transform 0.6s ease-in-out;
         -webkit-transition: transform 0.6s ease-in-out;}
     }
-/* Effect 3 */
-    @-webkit-keyframes button-scale { /* Safari 4.0 - 8.0 */
-      from {opacity: 0; transform: scale(0.5);}
-      to {opacity: 1; transform: scale(1);}
-    }
-    @keyframes button-scale { /* Standard syntax */
-      from {opacity: 0; transform: scale(0.5);}
-      to {opacity: 1; transform: scale(1);}
-    }
 /* ========= End Banner ========= */
+
+
+
+/* ========= Menu ========= */
+.p2-img-logo{
+    content: url(http://tetra-logic.com/img/TetraLogo2.png);
+    width: auto; /*or your image's width*/
+    height: auto; /*or your image's height*/
+    max-width: 66px;
+    max-height: 56px;
+}
+.p2-menu {
+    -webkit-box-shadow: 0 4px 6px -6px black;
+    -moz-box-shadow: 0 4px 6px -6px black;
+    box-shadow: 0 4px 6px -6px black;
+}
+#navbar {
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+    opacity: 1;
+    background: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-box-shadow: 0 4px 6px -6px black;
+    -moz-box-shadow: 0 4px 6px -6px black;
+    box-shadow: 0 4px 6px -6px black;
+}
+#navbar a {
+    font-family: 'Montserrat',sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 0;
+    letter-spacing: 0px;
+    width: 13%;
+    display:inline-block;
+    color: black;
+    text-align: center;
+    padding: 2% 0;
+    text-decoration: none;
+}
+#navbar a:hover {
+  color: #89a1ef;
+}
+/* ========= End Menu ========= */
+
+
+/* ========= Footer ========= */
+.p8-footer {
+    text-align: center;
+    background: url(http://tetra-logic.com/img/pw_maze_black_2X.png) left top repeat;
+    padding: 30px 0 10px;
+}
+.p8-img-logo{
+    content: url(http://tetra-logic.com/img/TetraLogo2.png);
+    width: auto; /*or your image's width*/
+    height: auto; /*or your image's height*/
+    max-width: 76px;
+    max-height: 70px;
+    margin-right: 1rem;
+    margin-bottom: 1.2rem;
+}
+.p8-p-text{
+    color: #d0c5c5;
+}
+/* ========= End Footer ========= */
