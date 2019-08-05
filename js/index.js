@@ -1,18 +1,7 @@
 $(document).ready(function() {
-    window.onscroll = function() {myFunction()};
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-});
-$(document).ready(function() {
+    //var navbar = document.getElementById("navbar");
+    //var sticky = navbar.offsetTop;
+    
   /* Every time the window is scrolled ... */
   $(window).scroll(function() {
     /* Check the location of each desired element */
@@ -28,4 +17,17 @@ $(document).ready(function() {
       }
     });
   });
+    
+     window.onscroll = function() {myFunction()};
+
+    var navbar = $("#navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
 });

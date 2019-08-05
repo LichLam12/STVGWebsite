@@ -105,7 +105,7 @@
 
 
     <!-- ========= Clients ========= -->
-    <div class="p6-slideshow">
+    <div class="p6-slideshow" id="clients">
         <div class="p6-mySlides">
             <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
             <p class="p6-author">- John Keats</p>
@@ -158,10 +158,10 @@
                 slides[i].style.display = "none";
             }
             for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
+                dots[i].className = dots[i].className.replace(" p6-active", "");
             }
             slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
+            dots[slideIndex - 1].className += " p6-active";
         }
     </script>
     <!-- ========= End Clients ========= -->
