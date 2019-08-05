@@ -1,4 +1,7 @@
 
+html {
+  scroll-behavior: smooth;
+}
 
 /* ========= Banner ========= */
 .p1-banner {
@@ -176,7 +179,7 @@
   top: 0;
   width: 100%;
     opacity: 1;
-    background: #f2f2f2;
+    background: #f7f7f7;
     text-align: center;
     vertical-align: middle;
     -webkit-box-shadow: 0 4px 6px -6px black;
@@ -200,6 +203,124 @@
   color: #89a1ef;
 }
 /* ========= End Menu ========= */
+
+
+
+/* ========= INDUSTRIES ========= */
+.p4-industries {
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#industries ul{
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 8%;
+    padding-right: 6%;
+    padding-top: 1%;
+}
+#industries ul li a{
+    font-size: 14.5px;
+    letter-spacing: 0.2px;
+    font-weight: 450;
+    color: #000;
+    background: #f5f5f5;
+    border-radius: 10px;
+}
+.nav-justified .active{
+    background: #66cc5e !important;
+    color: #fff !important;
+}
+    /* content of each INDUSTRIES */
+#industries .tab-pane {
+    text-align:justify; 
+    width: 86%;
+}
+#industries .tab-pane p {
+    margin-bottom: 0;
+}
+#industries .tab-pane b{
+    font-weight: 550;
+}
+#industries .tab-pane ul{
+    text-align:justify; 
+    list-style: circle;
+}
+#industries .tab-pane ul li{
+    padding: 4px 0;
+}
+/* ========= End INDUSTRIES ========= */
+
+
+
+
+/* ========= Clients ========= */
+/* Slideshow container */
+.p6-slideshow {
+    position: relative;
+    background: url(http://tetra-logic.com/img/section-bg1.jpg);
+    margin: 5% 0;
+}
+/* Slides */
+.p6-mySlides {
+    display: none;
+    padding: 90px 80px 40px;
+    text-align: center;
+    font-size: 24px;
+}
+.p6-mySlides q{
+    font-style: italic;
+    color: #fff;
+    font-size: 28px;
+}
+/* Add a blue color to the author */
+.p6-mySlides p {color: cornflowerblue;padding-top: 8px;}
+/* Next & previous buttons */
+.p6-prev, .p6-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px 32px;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.p6-next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.p6-prev:hover, .p6-next:hover {
+  color: #717171 !important;
+}
+/* The dot/bullet/indicator container */
+.p6-dot-container {
+    text-align: center;
+    padding: 16px;
+    /*background: #ddd;*/
+}
+/* Add a background color to the active dot/circle */
+.p6-active, .p6-dot:hover {
+  background-color: #717171 !important;
+}
+/* The dots/bullets/indicators */
+.p6-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #cccccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/* ========= End Clients ========= */
 
 
 /* ========= Footer ========= */
