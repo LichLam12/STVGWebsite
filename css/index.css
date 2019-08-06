@@ -178,6 +178,7 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 3;
     opacity: 1;
     background: #f7f7f7;
     text-align: center;
