@@ -208,7 +208,49 @@
         </div>
     </section>
     <!-- ========= End Services ========= -->
+    <section class="main-section contact container" id="contact">
+        <div class="row">
+            <div class="col-lg-6 col-sm-7 wow fadeInLeft animated"
+                style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="contact-info-box address clearfix">
+                    <h3><i class="fas fa-map-marker-alt"></i>Address:</h3>
+                    <span>4075 Zachary Trl<br>Conway, Arkansas, 72034.</span>
+                </div>
+                <div class="contact-info-box email clearfix">
+                    <h3><i class="fas fa-pencil-alt"></i>email:</h3>
+                    <span>sales@tetra-logic.com</span>
+                </div>
+                <div class="contact-info-box hours clearfix">
+                    <h3><i class="far fa-clock"></i>Hours:</h3>
+                    <span><strong>Monday - Friday:</strong> 8am - 5pm<br><strong>Saturday - Sunday:</strong> 9am -
+                        2pm</span>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s animated"
+                style="visibility: visible; animation-name: fadeInUp;">
+                <div class="form" style="width: 80%">
 
+                    <div id="sendmessage" style="display: none;">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-text" name="subject" id="subject"
+                                placeholder="Subject" data-rule="minlen:4"
+                                data-msg="Please enter at least 8 chars of subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control input-text text-area" name="message" rows="5"
+                                data-rule="required" data-msg="Please write something for us"
+                                placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="text-center"><button type="button" class="btn btn-success">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- jQuery library -->
     <script src="../js/bootstrap/jquery.min.js"></script>
