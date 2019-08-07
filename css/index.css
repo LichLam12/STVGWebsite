@@ -1,216 +1,247 @@
-
 html {
   scroll-behavior: smooth;
 }
 
 /* ========= Banner ========= */
 .p1-banner {
-    text-align: center;
-    background: url(http://tetra-logic.com/img/pw_maze_black_2X.png) left top repeat;
-    padding: 230px 0;
+  text-align: center;
+  background: url(http://tetra-logic.com/img/pw_maze_black_2X.png) left top
+    repeat;
+  padding: 230px 0;
 }
-.p1-img-logo{
-    content: url(http://tetra-logic.com/img/TetraLogo2.png);
-    width: auto; /*or your image's width*/
-    height: auto; /*or your image's height*/
-    max-width: 166px;
-    max-height: 160px;
-    margin-right: 2.5rem;
-    margin-top: -3rem;
+.p1-img-logo {
+  content: url(http://tetra-logic.com/img/TetraLogo2.png);
+  width: auto; /*or your image's width*/
+  height: auto; /*or your image's height*/
+  max-width: 166px;
+  max-height: 160px;
+  margin-right: 2.5rem;
+  margin-top: -3rem;
+  -webkit-transform: rotateY(0deg); /* Safari prior 9.0 */
+  transform: rotateY(0deg); /* Standard syntax */
+  transition: transform 0.6s ease-in-out;
+  -moz-transition: transform 0.6s ease-in-out;
+  -webkit-transition: transform 0.6s ease-in-out;
+  -webkit-animation-name: logo-effect; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: logo-effect;
+  animation-duration: 2s;
+}
+.p1-img-logo:hover {
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  transform-origin: bottom;
+  perspective: 400px;
+  perspective-origin: 25% 75%;
+  -webkit-transform: rotateY(150deg); /* Safari prior 9.0 */
+  transform: rotateY(150deg) perspective(400px) translateX(-20%) scale(1.5); /* Standard syntax */
+  /*-webkit-transform: rotateX(150deg); 
+  transform: rotateX(150deg); 
+    -webkit-transform: rotateZ(90deg); 
+  transform: rotateZ(90deg);*/
+  transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+}
+.p1-h1-techname {
+  color: #fff;
+  font-size: 3rem; /*2.5rem = 40px*/
+  font-family: "Montserrat", sans-serif;
+  font-size: 52px;
+  font-weight: 0;
+  letter-spacing: 1px;
+  position: relative;
+  -webkit-animation-name: opcacity-top; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: opcacity-top;
+  animation-duration: 2s;
+  /*
+    animation-delay: 0.8s;
+*/
+}
+.p1-p-mission {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: #bcbcbc;
+  text-transform: uppercase;
+  font-weight: 0;
+  letter-spacing: 0.8px;
+  padding: 16px 0 28px;
+  position: relative;
+  -webkit-animation-name: opcacity-bottom; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: opcacity-bottom;
+  animation-duration: 2s;
+  /* animation-delay: 0.8s;*/
+}
+.p1-a-more {
+  font-family: "Montserrat", sans-serif;
+  background: #66cc5e;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 18px 32px;
+  margin-right: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 3px;
+  position: relative;
+  /*transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;*/
+  -webkit-animation-name: opcacity-bottom; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  animation-name: opcacity-bottom;
+  animation-duration: 2s;
+  /*animation-delay: 0.8s;*/
+}
+.p1-a-more:hover {
+  color: #48b13f;
+  background: #f0eeee;
+  text-decoration: none;
+}
+/* Effect 1 */
+@-webkit-keyframes opcacity-top {
+  /* Safari 4.0 - 8.0 */
+  from {
+    opacity: 0;
+    top: -30px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@keyframes opcacity-top {
+  /* Standard syntax */
+  from {
+    opacity: 0;
+    top: -30px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+@-webkit-keyframes opcacity-bottom {
+  /* Safari 4.0 - 8.0 */
+  from {
+    opacity: 0;
+    bottom: -30px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes opcacity-bottom {
+  /* Standard syntax */
+  from {
+    opacity: 0;
+    bottom: -30px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+/* Effect 2 */
+@-webkit-keyframes logo-effect {
+  from {
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+    transform-origin: bottom;
+    perspective: 400px;
+    perspective-origin: 25% 75%;
+    -webkit-transform: rotateY(150deg); /* Safari prior 9.0 */
+    transform: rotateY(150deg) perspective(400px) translateX(-20%) scale(1.5); /* Standard syntax */
+    transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+  }
+  to {
     -webkit-transform: rotateY(0deg); /* Safari prior 9.0 */
     transform: rotateY(0deg); /* Standard syntax */
     transition: transform 0.6s ease-in-out;
     -moz-transition: transform 0.6s ease-in-out;
     -webkit-transition: transform 0.6s ease-in-out;
-    -webkit-animation-name: logo-effect; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: logo-effect;
-    animation-duration: 2s;
+  }
 }
-.p1-img-logo:hover{
+@keyframes logo-effect {
+  from {
     transform-style: preserve-3d;
-    backface-visibility:visible;
-    transform-origin:bottom;
+    backface-visibility: visible;
+    transform-origin: bottom;
     perspective: 400px;
     perspective-origin: 25% 75%;
     -webkit-transform: rotateY(150deg); /* Safari prior 9.0 */
     transform: rotateY(150deg) perspective(400px) translateX(-20%) scale(1.5); /* Standard syntax */
-    /*-webkit-transform: rotateX(150deg); 
-  transform: rotateX(150deg); 
-    -webkit-transform: rotateZ(90deg); 
-  transform: rotateZ(90deg);*/
     transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
+  }
+  to {
+    -webkit-transform: rotateY(0deg); /* Safari prior 9.0 */
+    transform: rotateY(0deg); /* Standard syntax */
+    transition: transform 0.6s ease-in-out;
+    -moz-transition: transform 0.6s ease-in-out;
+    -webkit-transition: transform 0.6s ease-in-out;
+  }
 }
-.p1-h1-techname{
-    color: #fff;
-    font-size: 3rem; /*2.5rem = 40px*/
-    font-family: 'Montserrat',sans-serif;
-    font-size: 52px;
-    font-weight: 0;
-    letter-spacing: 1px;
-    position: relative;
-    -webkit-animation-name: opcacity-top; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: opcacity-top;
-    animation-duration: 2s;
-/*
-    animation-delay: 0.8s;
-*/
-}
-.p1-p-mission{
-    font-family: 'Montserrat',sans-serif;
-    font-size: 16px;
-    color: #bcbcbc;
-    text-transform: uppercase;
-    font-weight: 0;
-    letter-spacing: 0.8px;
-    padding: 16px 0 28px;
-    position: relative;
-    -webkit-animation-name: opcacity-bottom; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: opcacity-bottom;
-    animation-duration: 2s;
-   /* animation-delay: 0.8s;*/
-}
-.p1-a-more{
-    font-family: 'Montserrat', sans-serif;
-    background: #66cc5e;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    padding: 18px 32px;
-    margin-right: 0.5rem;
-    text-transform: uppercase;
-    border-radius: 3px;
-    position: relative;
-    /*transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;*/
-    -webkit-animation-name: opcacity-bottom; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
-    animation-name: opcacity-bottom;
-    animation-duration: 2s;
-    /*animation-delay: 0.8s;*/
-}
-.p1-a-more:hover{
-    color: #48b13f;
-    background: #f0eeee;
-    text-decoration: none;
-}
-/* Effect 1 */
-    @-webkit-keyframes opcacity-top { /* Safari 4.0 - 8.0 */
-      from {opacity: 0; top: -30px;}
-      to {opacity: 1; top: 0;}
-    }
-    @keyframes opcacity-top { /* Standard syntax */
-      from {opacity: 0; top: -30px;}
-      to {opacity: 1; top: 0;}
-    }
-    @-webkit-keyframes opcacity-bottom { /* Safari 4.0 - 8.0 */
-      from {opacity: 0; bottom: -30px;}
-      to {opacity: 1; bottom: 0;}
-    }
-    @keyframes opcacity-bottom { /* Standard syntax */
-      from {opacity: 0; bottom: -30px;}
-      to {opacity: 1; bottom: 0;}
-    }
-/* Effect 2 */
-    @-webkit-keyframes logo-effect {
-      from {transform-style: preserve-3d;
-        backface-visibility:visible;
-        transform-origin:bottom;
-        perspective: 400px;
-        perspective-origin: 25% 75%;
-        -webkit-transform: rotateY(150deg); /* Safari prior 9.0 */
-        transform: rotateY(150deg) perspective(400px) translateX(-20%) scale(1.5); /* Standard syntax */
-        transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -webkit-transition: all 1s ease-in-out;}
-      to {-webkit-transform: rotateY(0deg); /* Safari prior 9.0 */
-        transform: rotateY(0deg); /* Standard syntax */
-        transition: transform 0.6s ease-in-out;
-        -moz-transition: transform 0.6s ease-in-out;
-        -webkit-transition: transform 0.6s ease-in-out;}
-    }
-    @keyframes logo-effect {
-      from {transform-style: preserve-3d;
-        backface-visibility:visible;
-        transform-origin:bottom;
-        perspective: 400px;
-        perspective-origin: 25% 75%;
-        -webkit-transform: rotateY(150deg); /* Safari prior 9.0 */
-        transform: rotateY(150deg) perspective(400px) translateX(-20%) scale(1.5); /* Standard syntax */
-        transition: all 1s ease-in-out;
-        -moz-transition: all 1s ease-in-out;
-        -webkit-transition: all 1s ease-in-out;}
-      to {-webkit-transform: rotateY(0deg); /* Safari prior 9.0 */
-        transform: rotateY(0deg); /* Standard syntax */
-        transition: transform 0.6s ease-in-out;
-        -moz-transition: transform 0.6s ease-in-out;
-        -webkit-transition: transform 0.6s ease-in-out;}
-    }
 /* ========= End Banner ========= */
 
-
-
 /* ========= Menu ========= */
-.p2-img-logo{
-    content: url(http://tetra-logic.com/img/TetraLogo2.png);
-    width: auto; /*or your image's width*/
-    height: auto; /*or your image's height*/
-    max-width: 66px;
-    max-height: 46px;
+.p2-img-logo {
+  content: url(http://tetra-logic.com/img/TetraLogo2.png);
+  width: auto; /*or your image's width*/
+  height: auto; /*or your image's height*/
+  max-width: 66px;
+  max-height: 46px;
 }
 .p2-menu {
-    -webkit-box-shadow: 0 4px 6px -6px black;
-    -moz-box-shadow: 0 4px 6px -6px black;
-    box-shadow: 0 4px 6px -6px black;
+  -webkit-box-shadow: 0 4px 6px -6px black;
+  -moz-box-shadow: 0 4px 6px -6px black;
+  box-shadow: 0 4px 6px -6px black;
 }
 #navbar {
-    overflow: hidden;
-    text-align: center;
-    vertical-align: middle;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
 }
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 3;
-    opacity: 1;
-    background: #f8f8f8;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-box-shadow: 0 4px 6px -6px black;
-    -moz-box-shadow: 0 4px 6px -6px black;
-    box-shadow: 0 4px 6px -6px black;
+  opacity: 1;
+  background: #f8f8f8;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-box-shadow: 0 4px 6px -6px black;
+  -moz-box-shadow: 0 4px 6px -6px black;
+  box-shadow: 0 4px 6px -6px black;
 }
 #navbar a {
-    font-family: 'Montserrat',sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 0;
-    letter-spacing: 0px;
-    width: 13%;
-    display:inline-block;
-    color: black;
-    text-align: center;
-    padding: 1.6% 0;
-    text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 0;
+  letter-spacing: 0px;
+  width: 13%;
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 1.6% 0;
+  text-decoration: none;
 }
 #navbar a:hover {
   color: #89a1ef;
 }
 /* ========= End Menu ========= */
 
-
-
-
 /* ========= services ========= */
 #services {
-    padding-top:8%;
+  padding-top: 8%;
 }
 #services .service-left{
     overflow-y: scroll;
@@ -224,14 +255,14 @@ html {
   font-weight: 700;
   letter-spacing: -1px;
   margin: 0 0 15px 0;*/
-    letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
   text-align: center;
   text-transform: uppercase;
 }
 #services h6 {
   font-size: 16px;
-  
-/*
+
+  /*
     color: #888888;
   font-family: "Open Sans", sans-serif;
 */
@@ -240,16 +271,16 @@ html {
   margin: 0 0 32px 0;
 }
 #services h3 {
-    font-size: 22px;
+  font-size: 22px;
 }
 #services .service-list {
-    margin-left: 48px;
+  margin-left: 48px;
 }
 #services .service-list-col1 {
-    float: left;
-    /*width: 60px;*/
-    text-align: center;
-    padding: 3px 12px 0 0;
+  float: left;
+  /*width: 60px;*/
+  text-align: center;
+  padding: 3px 12px 0 0;
 }
 #services .service-list-col1 i {
   font-style: normal;
@@ -257,60 +288,57 @@ html {
   color: #222;
 }
 #services .service-list-col2 {
-    overflow: hidden;
+  overflow: hidden;
 }
 #services .service-list-col2 p {
-    margin: 0;
-    line-height: 24px; 
+  margin: 0;
+  line-height: 24px;
 }
 /* ========= END services ========= */
 
-
 /* ========= INDUSTRIES ========= */
 .p4-industries {
-    text-align: center;
-    padding-top: 7%;
+  text-align: center;
+  padding-top: 7%;
 }
-#industries ul{
-    text-align: center;
-    vertical-align: middle;
-    padding-left: 8%;
-    padding-right: 6%;
-    padding-top: 1%;
+#industries ul {
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 8%;
+  padding-right: 6%;
+  padding-top: 1%;
 }
-#industries ul li a{
-    font-size: 14.5px;
-    letter-spacing: 0.2px;
-    font-weight: 450;
-    color: #000;
-    background: #f5f5f5;
-    border-radius: 10px;
+#industries ul li a {
+  font-size: 14.5px;
+  letter-spacing: 0.2px;
+  font-weight: 450;
+  color: #000;
+  background: #f5f5f5;
+  border-radius: 10px;
 }
-.nav-justified .active{
-    background: #66cc5e !important;
-    color: #fff !important;
+.nav-justified .active {
+  background: #66cc5e !important;
+  color: #fff !important;
 }
-    /* content of each INDUSTRIES */
+/* content of each INDUSTRIES */
 #industries .tab-pane {
-    text-align:justify; 
-    width: 86%;
+  text-align: justify;
+  width: 86%;
 }
 #industries .tab-pane p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-#industries .tab-pane b{
-    font-weight: 550;
+#industries .tab-pane b {
+  font-weight: 550;
 }
-#industries .tab-pane ul{
-    text-align:justify; 
-    list-style: circle;
+#industries .tab-pane ul {
+  text-align: justify;
+  list-style: circle;
 }
-#industries .tab-pane ul li{
-    padding: 4px 0;
+#industries .tab-pane ul li {
+  padding: 4px 0;
 }
 /* ========= End INDUSTRIES ========= */
-
-
 
 /* ========= Products ========= */
 #products {
@@ -330,7 +358,7 @@ html {
 #products h6 {
   font-size: 16px;
   /*color: #888888;*/
-/*
+  /*
   font-family: "Open Sans", sans-serif;
 */
   font-weight: 400;
@@ -341,15 +369,16 @@ html {
   height: 150px;
 }
 #products .flex-class {
+  opacity: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 #products .card-product {
-    margin-bottom: 10px;
-    line-height: 22px;
-    color: #656565;
+  margin-bottom: 10px;
+  line-height: 22px;
+  color: #656565;
 }
 /*
 .p5-slideshow {
@@ -384,34 +413,33 @@ html {
 }*/
 /* ========= End Products ========= */
 
-
-
-
-
-
 /* ========= Clients ========= */
 /* Slideshow container */
 .p6-slideshow {
-    position: relative;
-    background: url(http://tetra-logic.com/img/section-bg1.jpg);
-    margin: 5% 0;
+  position: relative;
+  background: url(http://tetra-logic.com/img/section-bg1.jpg);
+  margin: 5% 0;
 }
 /* Slides */
 .p6-mySlides {
-    display: none;
-    padding: 120px 80px 50px;
-    text-align: center;
-    font-size: 24px;
+  display: none;
+  padding: 120px 80px 50px;
+  text-align: center;
+  font-size: 24px;
 }
-.p6-mySlides q{
-    font-style: italic;
-    color: #fff;
-    font-size: 28px;
+.p6-mySlides q {
+  font-style: italic;
+  color: #fff;
+  font-size: 28px;
 }
 /* Add a blue color to the author */
-.p6-mySlides p {color: cornflowerblue;padding-top: 8px;}
+.p6-mySlides p {
+  color: cornflowerblue;
+  padding-top: 8px;
+}
 /* Next & previous buttons */
-.p6-prev, .p6-next {
+.p6-prev,
+.p6-next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -431,17 +459,19 @@ html {
   border-radius: 3px 0 0 3px;
 }
 /* On hover, add a black background color with a little bit see-through */
-.p6-prev:hover, .p6-next:hover {
+.p6-prev:hover,
+.p6-next:hover {
   color: #717171 !important;
 }
 /* The dot/bullet/indicator container */
 .p6-dot-container {
-    text-align: center;
-    padding: 16px;
-    /*background: #ddd;*/
+  text-align: center;
+  padding: 16px;
+  /*background: #ddd;*/
 }
 /* Add a background color to the active dot/circle */
-.p6-active, .p6-dot:hover {
+.p6-active,
+.p6-dot:hover {
   background-color: #717171 !important;
 }
 /* The dots/bullets/indicators */
@@ -457,14 +487,11 @@ html {
 }
 /* ========= End Clients ========= */
 
-
-
-
-
 /* ========= Contact ========= */
 #contact {
-    padding: 10px 0 80px;
-    background: url(http://tetra-logic.com/img/bg-map.png) left 190px no-repeat;
+  opacity: 0;
+  padding: 10px 0 80px;
+  background: url(http://tetra-logic.com/img/bg-map.png) left 190px no-repeat;
 }
 #contact .contact-left{
     min-width: 50%;
@@ -480,10 +507,10 @@ html {
   padding-left: 0;
 }
 #contact .contact-info-box span {
-    font-size: 18px;
-      line-height: 28px;
-      display: block;
-      overflow: hidden;
+  font-size: 18px;
+  line-height: 28px;
+  display: block;
+  overflow: hidden;
 }
 #contact .contact-info-box h3 {
   font-size: 18px;
@@ -513,38 +540,31 @@ html {
   resize: none;
   overflow: auto;
 }
-#contact strong{
-    font-weight: 550;
+#contact strong {
+  font-weight: 550;
 }
 /* ========= End Contact ========= */
 
-
-
-
 /* ========= Footer ========= */
 .p8-footer {
-    text-align: center;
-    background: url(http://tetra-logic.com/img/pw_maze_black_2X.png) left top repeat;
-    padding: 30px 0 10px;
+  text-align: center;
+  background: url(http://tetra-logic.com/img/pw_maze_black_2X.png) left top
+    repeat;
+  padding: 30px 0 10px;
 }
-.p8-img-logo{
-    content: url(http://tetra-logic.com/img/TetraLogo2.png);
-    width: auto; /*or your image's width*/
-    height: auto; /*or your image's height*/
-    max-width: 76px;
-    max-height: 70px;
-    margin-right: 1rem;
-    margin-bottom: 1.2rem;
+.p8-img-logo {
+  content: url(http://tetra-logic.com/img/TetraLogo2.png);
+  width: auto; /*or your image's width*/
+  height: auto; /*or your image's height*/
+  max-width: 76px;
+  max-height: 70px;
+  margin-right: 1rem;
+  margin-bottom: 1.2rem;
 }
-.p8-p-text{
-    color: #d0c5c5;
+.p8-p-text {
+  color: #d0c5c5;
 }
 /* ========= End Footer ========= */
-
-
-
-
-
 
 /*   effect name  */
 @-webkit-keyframes fadeInDown {

@@ -16,7 +16,7 @@
 });*/
 $(document).ready(function() {
   /* Every time the window is scrolled ... */
-    animation_load();
+  animation_load();
   $(window).scroll(function() {
     /* Check the location of each desired element */
     animation_load();
@@ -26,10 +26,10 @@ function animation_load() {
   $(".main-section").each(function(i) {
     var top_of_object_services = $(".fadeServices").offset().top;
     var top_of_object_products = $(".flex-class").offset().top;
-    var top_of_object_contact = $(".p6-slideshow").offset().top;
-      
+    var top_of_object_contact = $("#contact").offset().top;
+  
     var bottom_of_window = $(window).scrollTop() + $(window).height();
-      console.log(top_of_object_services +" + "+bottom_of_window);
+    console.log(top_of_object_services + " + " + bottom_of_window);
     /* If the object is completely visible in the window, fade it it */
     if (bottom_of_window >= top_of_object_services) {
       $("#services").animate({ opacity: "1" });
@@ -41,12 +41,17 @@ function animation_load() {
       $(".contact-left").addClass("fadeInLeft");
       $(".contact-right").addClass("fadeInUp");
     }
-      
+
     if (bottom_of_window >= top_of_object_products) {
       $("#products").animate({ opacity: "1" });
       $(".flex-class").animate({ opacity: "1" });
       $(".flex-class").addClass("fadeInUp");
     }
-      
+
+    if (bottom_of_window >= top_of_object_products) {
+      $("#products").animate({ opacity: "1" });
+      $(".flex-class").animate({ opacity: "1" });
+      $(".flex-class").addClass("fadeInUp");
+    }
   });
 }
