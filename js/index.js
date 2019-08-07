@@ -37,7 +37,7 @@ function animation_load() {
       $(".fadeServices").addClass("fadeInLeft");
       $(".fadeInUpImg").addClass("fadeInUp");
     }
-    if (bottom_of_window >= top_of_object_contact) {
+    if (bottom_of_window >= top_of_object_contact+100) {
       $("#contact").animate({ opacity: "1" });
       $(".contact-left").addClass("fadeInLeft");
       $(".contact-right").addClass("fadeInUp");
@@ -49,7 +49,7 @@ function animation_load() {
       $(".flex-class").addClass("fadeInUp");
     }
 
-    if (bottom_of_window > top_of_object_industries + 150) {
+    if (bottom_of_window > top_of_object_industries + 200) {
       $("#industries").animate({ opacity: "1" });
       $(".industry-top").addClass("fadeInLeft");
       $(".industry-bottom").addClass("fadeInUp");
