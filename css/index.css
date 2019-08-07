@@ -212,6 +212,10 @@ html {
 #services {
     padding-top:8%;
 }
+#services .service-left{
+    overflow-y: scroll;
+    max-height: 420px;
+}
 #services h2 {
   /*font-size: 34px;
   color: #222222;
