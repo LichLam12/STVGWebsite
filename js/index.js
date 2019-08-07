@@ -21,14 +21,6 @@ $(document).ready(function() {
     /* Check the location of each desired element */
     animation_load();
   });
-    var myCustomScrollbar = document.querySelector('.my-custom-scrollbar');
-var ps = new PerfectScrollbar(myCustomScrollbar);
-
-var scrollbarY = myCustomScrollbar.querySelector('.ps.ps--active-y>.ps__scrollbar-y-rail');
-
-myCustomScrollbar.onscroll = function() {
-  scrollbarY.style.cssText = `top: ${this.scrollTop}px!important; height: 400px; right: ${-this.scrollLeft}px`;
-}
 });
 function animation_load() {
   $(".main-section").each(function(i) {

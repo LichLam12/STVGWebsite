@@ -215,6 +215,7 @@ html {
 #services .service-left{
     overflow-y: scroll;
     max-height: 420px;
+    min-width: 400px;
 }
 #services h2 {
   /*font-size: 34px;
@@ -464,6 +465,14 @@ html {
 #contact {
     padding: 10px 0 80px;
     background: url(http://tetra-logic.com/img/bg-map.png) left 190px no-repeat;
+}
+#contact .contact-left{
+    min-width: 50%;
+    vertical-align: middle;
+}
+#contact .contact-right{
+    min-width: 50%;
+    vertical-align: middle;
 }
 #contact .contact-info-box {
   font-size: 14px;
