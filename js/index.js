@@ -27,11 +27,12 @@ function animation_load() {
     var top_of_object_services = $(".fadeServices").offset().top;
     var top_of_object_products = $(".flex-class").offset().top;
     var top_of_object_contact = $("#contact").offset().top;
-  
+    var top_of_object_industries = $("#industries").offset().top;
+
     var bottom_of_window = $(window).scrollTop() + $(window).height();
     console.log(top_of_object_services + " + " + bottom_of_window);
     /* If the object is completely visible in the window, fade it it */
-    if (bottom_of_window >= top_of_object_services) {
+    if (bottom_of_window >= top_of_object_services+50) {
       $("#services").animate({ opacity: "1" });
       $(".fadeServices").addClass("fadeInLeft");
       $(".fadeInUpImg").addClass("fadeInUp");
@@ -42,16 +43,16 @@ function animation_load() {
       $(".contact-right").addClass("fadeInUp");
     }
 
-    if (bottom_of_window >= top_of_object_products) {
+    if (bottom_of_window >= top_of_object_products+200) {
       $("#products").animate({ opacity: "1" });
       $(".flex-class").animate({ opacity: "1" });
       $(".flex-class").addClass("fadeInUp");
     }
 
-    if (bottom_of_window >= top_of_object_products) {
-      $("#products").animate({ opacity: "1" });
-      $(".flex-class").animate({ opacity: "1" });
-      $(".flex-class").addClass("fadeInUp");
+    if (bottom_of_window > top_of_object_industries + 150) {
+      $("#industries").animate({ opacity: "1" });
+      $(".industry-top").addClass("fadeInLeft");
+      $(".industry-bottom").addClass("fadeInUp");
     }
   });
 }
