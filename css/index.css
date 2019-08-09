@@ -222,7 +222,7 @@ html {
   box-shadow: 0 4px 6px -6px black;
 }
 .sticky + #services {
-  padding-top: 151.5px;
+  padding-top: 111.5px;
 }
 #navbar a {
   font-family: "Montserrat", sans-serif;
@@ -244,7 +244,7 @@ html {
 
 /* ========= services ========= */
 #services {
-  padding-top: 70px;
+  padding-top: 30px;
 }
 #services .service-left{
     overflow-y: scroll;
