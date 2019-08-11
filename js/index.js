@@ -7,6 +7,8 @@
   var sticky = navbar.offsetTop;
 
   function myFunction() {
+    var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
     if (window.pageYOffset >= sticky) {
       navbar.classList.add("sticky");
     } else {
@@ -14,14 +16,26 @@
     }
   }
 });*/
+
 $(document).ready(function() {
   /* Every time the window is scrolled ... */
   animation_load();
+  addNavbar();
   $(window).scroll(function() {
     /* Check the location of each desired element */
+    addNavbar();
     animation_load();
   });
 });
+function addNavbar() {
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
 function animation_load() {
   $(".main-section").each(function(i) {
     var top_of_object_services = $(".fadeServices").offset().top;
@@ -32,18 +46,18 @@ function animation_load() {
     var bottom_of_window = $(window).scrollTop() + $(window).height();
     console.log(top_of_object_services + " + " + bottom_of_window);
     /* If the object is completely visible in the window, fade it it */
-    if (bottom_of_window >= top_of_object_services+50) {
+    if (bottom_of_window >= top_of_object_services + 50) {
       $("#services").animate({ opacity: "1" });
       $(".fadeServices").addClass("fadeInLeft");
       $(".fadeInUpImg").addClass("fadeInUp");
     }
-    if (bottom_of_window >= top_of_object_contact+100) {
+    if (bottom_of_window >= top_of_object_contact + 100) {
       $("#contact").animate({ opacity: "1" });
       $(".contact-left").addClass("fadeInLeft");
       $(".contact-right").addClass("fadeInUp");
     }
 
-    if (bottom_of_window >= top_of_object_products+200) {
+    if (bottom_of_window >= top_of_object_products + 200) {
       $("#products").animate({ opacity: "1" });
       $(".flex-class").animate({ opacity: "1" });
       $(".flex-class").addClass("fadeInUp");
