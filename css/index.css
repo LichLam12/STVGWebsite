@@ -1,6 +1,11 @@
 html {
   scroll-behavior: smooth;
 }
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
 
 /* ========= Banner ========= */
 .p1-banner {
@@ -210,8 +215,7 @@ html {
 }
 .sticky {
   position: fixed;
-  top: 0;
-  width: 100%;
+  top: 0px;
   z-index: 3;
   opacity: 1;
   background: #f8f8f8;
@@ -222,7 +226,7 @@ html {
   box-shadow: 0 4px 6px -6px black;
 }
 .sticky + #services {
-  padding-top: 111.5px;
+  padding-top: 103.38px;
 }
 #navbar a {
   font-family: "Montserrat", sans-serif;
@@ -230,15 +234,28 @@ html {
   text-transform: uppercase;
   font-weight: 0;
   letter-spacing: 0px;
-  width: 13%;
   display: inline-block;
   color: black;
   text-align: center;
-  padding: 1.6% 0;
+  /* padding: 1.6% 0; */
   text-decoration: none;
 }
 #navbar a:hover {
   color: #89a1ef;
+}
+#collapsibleNavbar ul li{
+  padding-top:10px;
+}
+@media only screen and (max-width: 768px){
+  #collapsibleNavbar ul li:nth-child(4){
+      display: none;
+  }
+  #logo-company{
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 768px){  
 }
 /* ========= End Menu ========= */
 
@@ -246,11 +263,11 @@ html {
 #services {
   padding-top: 30px;
 }
-#services .service-left{
+/* #services .service-left{
     overflow-y: scroll;
     max-height: 420px;
     min-width: 400px;
-}
+} */
 #services h2 {
   /*font-size: 34px;
   color: #222222;
@@ -506,7 +523,7 @@ html {
 }
 #contact .contact-info-box {
   font-size: 14px;
-  margin: 0 0 14px 68px;
+  margin: 0 0 14px 14px;
   padding-left: 0;
 }
 #contact .contact-info-box span {

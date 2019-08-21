@@ -1,5 +1,8 @@
 var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
+var top_of_object_navbar = navbar.offsetTop;
+$('.navbar-nav>li>a').on('click', function(){
+  $('.navbar-collapse').collapse('hide');
+});
 $(document).ready(function() {
   /* Every time the window is scrolled ... */
   animation_load();
@@ -11,7 +14,7 @@ $(document).ready(function() {
   });
 });
 function addNavbar() {
-  if (window.pageYOffset >= sticky) {
+  if (window.pageYOffset >= top_of_object_navbar) {
     navbar.classList.add("sticky");
   } else {
     navbar.classList.remove("sticky");
