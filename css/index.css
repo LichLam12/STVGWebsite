@@ -198,9 +198,9 @@ html {
 /* ========= Menu ========= */
 .p2-img-logo {
   content: url(http://tetra-logic.com/img/TetraLogo2.png);
-  width: auto; /*or your image's width*/
-  height: auto; /*or your image's height*/
-  max-width: 66px;
+  width: auto;
+  height: auto;
+  max-width: 46px;
   max-height: 46px;
 }
 .p2-menu {
@@ -226,7 +226,7 @@ html {
   box-shadow: 0 4px 6px -6px black;
 }
 .sticky + #services {
-  padding-top: 103.38px;
+  padding-top: 108px;
 }
 #navbar a {
   font-family: "Montserrat", sans-serif;
@@ -246,12 +246,18 @@ html {
 #collapsibleNavbar ul li{
   padding-top:10px;
 }
+#collapsibleNavbar ul li:nth-child(4){
+  padding-top: 0px ;
+}
 @media only screen and (max-width: 768px){
   #collapsibleNavbar ul li:nth-child(4){
       display: none;
   }
   #logo-company{
     display: block !important;
+  }
+  .sticky + #services {
+    padding-top: 92px;
   }
 }
 
