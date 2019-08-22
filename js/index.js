@@ -3,6 +3,11 @@ var top_of_object_navbar = navbar.offsetTop;
 $('.navbar-nav>li>a').on('click', function(){
   $('.navbar-collapse').collapse('hide');
 });
+$(document).click(function(e) {
+	if (!$(e.target).is('#navbar')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});
 $(document).ready(function() {
   /* Every time the window is scrolled ... */
   animation_load();
