@@ -584,12 +584,12 @@ html {
 /* ========= Footer ========= */
 .p8-footer {
   text-align: center;
-  background: url(/assets/pw_maze_black_2X.png) left top
+  background: url(../assets/pw_maze_black_2X.png) left top
     repeat;
   padding: 30px 0 10px;
 }
 .p8-img-logo {
-  content: url(/assets/stvg-logo-1.png);
+  content: url(../assets/stvg-logo-1.png);
   width: auto; /*or your image's width*/
   height: auto; /*or your image's height*/
   max-width: 76px;
