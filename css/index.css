@@ -10,17 +10,16 @@ html {
 /* ========= Banner ========= */
 .p1-banner {
   text-align: center;
-  background: url(http://tetra-logic.com/img/pw_maze_black_2X.png) left top
+  background: url(../assets/pw_maze_black_2X.png) left top
     repeat;
   padding: 230px 0;
 }
 .p1-img-logo {
-  content: url(http://tetra-logic.com/img/TetraLogo2.png);
+  content: url(../assets/stvg-logo-1.png);
   width: auto; /*or your image's width*/
   height: auto; /*or your image's height*/
-  max-width: 166px;
+  /* max-width: 166px; */
   max-height: 160px;
-  margin-right: 2.5rem;
   margin-top: -3rem;
   -webkit-transform: rotateY(0deg); /* Safari prior 9.0 */
   transform: rotateY(0deg); /* Standard syntax */
@@ -32,7 +31,7 @@ html {
   animation-name: logo-effect;
   animation-duration: 2s;
 }
-.p1-img-logo:hover {
+.p1-img-logo-delete:hover {
   transform-style: preserve-3d;
   backface-visibility: visible;
   transform-origin: bottom;
@@ -40,10 +39,12 @@ html {
   perspective-origin: 25% 75%;
   -webkit-transform: rotateY(150deg); /* Safari prior 9.0 */
   transform: rotateY(150deg) perspective(400px) translateX(-20%) scale(1.5); /* Standard syntax */
+  
   /*-webkit-transform: rotateX(150deg); 
   transform: rotateX(150deg); 
     -webkit-transform: rotateZ(90deg); 
   transform: rotateZ(90deg);*/
+  
   transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
   -webkit-transition: all 1s ease-in-out;
@@ -197,10 +198,10 @@ html {
 
 /* ========= Menu ========= */
 .p2-img-logo {
-  content: url(http://tetra-logic.com/img/TetraLogo2.png);
+  content: url(../assets/stvg-logo-1.png);
   width: auto;
   height: auto;
-  max-width: 46px;
+  /* max-width: 46px; */
   max-height: 46px;
 }
 .p2-menu {
@@ -583,12 +584,12 @@ html {
 /* ========= Footer ========= */
 .p8-footer {
   text-align: center;
-  background: url(http://tetra-logic.com/img/pw_maze_black_2X.png) left top
+  background: url(/assets/pw_maze_black_2X.png) left top
     repeat;
   padding: 30px 0 10px;
 }
 .p8-img-logo {
-  content: url(http://tetra-logic.com/img/TetraLogo2.png);
+  content: url(/assets/stvg-logo-1.png);
   width: auto; /*or your image's width*/
   height: auto; /*or your image's height*/
   max-width: 76px;
