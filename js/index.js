@@ -30,6 +30,7 @@ function animation_load() {
     var top_of_object_services = $(".fadeServices").offset().top;
     var top_of_object_products = $(".flex-class").offset().top;
     var top_of_object_contact = $("#contact").offset().top;
+    var top_of_object_clients = $("#clients").offset().top;
     var top_of_object_industries = $("#industries").offset().top;
 
     var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -47,6 +48,11 @@ function animation_load() {
 
     if (bottom_of_window >= top_of_object_products + 200) {
       $("#products").animate({ opacity: "1" });
+      $(".flex-class").animate({ opacity: "1" });
+      $(".flex-class").addClass("fadeInUp");
+    }
+    if (bottom_of_window >= top_of_object_clients + 200) {
+      $("#clients").animate({ opacity: "1" });
       $(".flex-class").animate({ opacity: "1" });
       $(".flex-class").addClass("fadeInUp");
     }
