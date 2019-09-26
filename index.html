@@ -57,16 +57,16 @@
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav"
-                    style="width: 100%;text-align: center; display: flex;justify-content: space-between">
+                    style="width: 100%;text-align: center; display: flex;justify-content: space-around">
                     <li class="nav-item">
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#industries">Industries</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#home"><img class="p2-img-logo" alt="STVG Technology Logo"></a>
                     </li>
@@ -76,32 +76,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#clients">Members</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </nav>
     </div>
     <!-- ========= End Menu ========= -->
-    <!--<script type=”text/javascript”>
-        $(document).ready(function() {
-        var aboveHeight = $(‘header’).outerHeight();
-            $(window).scroll(function(){
-                if ($(window).scrollTop() > aboveHeight){
-                $('.p2-menu').addClass(‘fixed’).css(‘top’,’0′).next().css(‘padding-top’,’60px’);
-                } else {
-               $('.p2-menu').removeClass(‘fixed’).next().css(‘padding-top’,’0′);
-                }
-            });
-        });
-</script>-->
 
     <!-- ========= Services ========= -->
     <section class="container-fluid main-section" id="services">
         <div class="container">
             <h2>SERVICES</h2>
-            <h6>We offer a broad selection of services with experts in each field.</h6>
+            <h6>We offer a broad selection of services with experts in each field</h6>
             <div class="row">
                 <div class="col-lg-5 col-sm-6 wow delay-05s fadeServices animated service-left"
                     style="visibility: visible;">
@@ -115,9 +103,9 @@
                                 Turn key application development for any platform.
                             </p>
                             <ul style="list-style-type:circle">
-                                <li>C++, DotNet, JAVA, Python</li>
-                                <li>SQL, No-SQL, Flat</li>
-                                <li>Windows, Linux, Mac</li>
+                                <li>C++, DotNet, JAVA</li>
+                                <li>SQL, No-SQL</li>
+                                <li>Windows, Linux</li>
                             </ul>
                             <p></p>
                         </div>
@@ -130,29 +118,12 @@
                             <h3>Web &amp; Mobile Development</h3>
                             <p>
                                 Native, Hybrid, and Mobile Web. Utilizing the latest technologies, we can handle large
-                                data, video streaming and POS.
+                                data, video streaming.
                             </p>
                             <ul style="list-style-type:circle">
-                                <li>HTML/CSS, Angular, React</li>
-                                <li>Xamarin, Ionic, Cordova</li>
-                                <li>ASP Core, PHP, Node.js</li>
-                            </ul>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="service-list">
-                        <div class="service-list-col1">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <div class="service-list-col2">
-                            <h3>APIs</h3>
-                            <p>
-                                From API development to consumption, we offer customizable solutions.
-                            </p>
-                            <ul style="list-style-type:circle">
-                                <li>Amazon Web Services, Google, Azure</li>
-                                <li>Twilio, Verizon, ATT</li>
-                                <li>ASP Core, PHP, Node.js</li>
+                                <li>HTML/CSS</li>
+                                <li>PHP</li>
+                                <li>DotNet Core</li>
                             </ul>
                             <p></p>
                         </div>
@@ -164,32 +135,30 @@
                         <div class="service-list-col2">
                             <h3>Business Intelligence</h3>
                             <p>
-                                Web or native dashboards and reports
+                                Web or native dashboards, reports and managements
                             </p>
                             <ul style="list-style-type:circle">
-                                <li>Any data source</li>
-                                <li>Adaptive for desktop and mobile</li>
-                                <li>Scheduling and automatic delivery</li>
-                                <li>Industry experts on staff</li>
+                                <li>Anti-theft system</li>
+                                <li>Increasing revenue profits</li>
+                                <li>Improving work efficiency</li>
                             </ul>
                             <p></p>
                         </div>
                     </div>
                     <div class="service-list">
                         <div class="service-list-col1">
-                            <i class="fas fa-cogs"></i>
+                            <i class="fas fa-file"></i>
                         </div>
                         <div class="service-list-col2">
-                            <h3>Hardware Design and Development</h3>
+                            <h3>Artificial Intelligence</h3>
                             <p>
-                                Down to the board level, we can take your idea from concept to shipping. We specialize
-                                in layout all the way to the firmware.
+                                Identification and detection systems
                             </p>
                             <ul style="list-style-type:circle">
-                                <li>CAD design for enclosures</li>
-                                <li>Circuit layout and prototyping</li>
-                                <li>Firmware and embedded dev</li>
-                                <li>Manufacturing management</li>
+                                <li>ANPR system</li>
+                                <li>Traffic violations detection</li>
+                                <li>Identification destructive behavior, crime</li>
+                                <li>Facial recognition system</li>
                             </ul>
                             <p></p>
                         </div>
@@ -204,60 +173,7 @@
     <!-- ========= END Services ========= -->
 
     <!-- ========= INDUSTRIES ========= -->
-    <div class="container-fluid">
-        <div class="container p4-industries" id="industries">
-            <h2 class="p4-h2-title">INDUSTRIES</h2>
-            <p class="p4-p-subtitle">Take a look at just a few of the industries we have worked in</p>
-            <!-- Nav tabs -->
-            <ul class="nav industry-top delay-05s fadeServices animated">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#health">HEALTH CARE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#automotive">AUTOMOTIVE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#safety">PUBLIC SAFETY</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#consumer">CONSUMER</a>
-                </li>
-            </ul>
 
-            <!-- Tab panes -->
-            <div class="tab-content industry-bottom delay-05s fadeServices animated">
-                <div id="health" class="container tab-pane active"><br>
-                    <p>We understand that healthcare is challenging. The diverse problems along with an ever changing
-                        environment makes it difficult to focus on the primary objective of positive patient outcomes:
-                    </p>
-                    <ul class="">
-                        <li class=""><b>System APIs – Over</b> the years we have helped customers connect to other
-                            systems
-                            either outside of their internal systems or from one disparate system to another through the
-                            use
-                            of APIs and other data transfer processes.
-                        </li>
-                        <li class=""><b>System APIs – Over</b> the years we have helped customers connect to other
-                            systems
-                            either outside of their internal systems or from one disparate system to another through the
-                            use
-                            of APIs and other data transfer processes.
-                        </li>
-                        <li class=""><b>System APIs – Over</b> the years we have helped customers connect to other
-                            systems
-                            either outside of their internal systems or from one disparate system to another through the
-                            use
-                            of APIs and other data transfer processes.
-                        </li>
-                    </ul>
-                </div>
-                <!--<div id="automotive" class="container tab-pane fade"><br>
-            </div>
-            <div id="safety" class="container tab-pane fade"><br>
-            </div>-->
-            </div>
-        </div>
-    </div>
 
     <!-- ========= End INDUSTRIES ========= -->
 
@@ -292,6 +208,27 @@
                         </p>
                     </div>
                 </div>
+                <div class="card card-product" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/face-recognition.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text text-center">INTELLIGENT FACE RECOGNITION
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-product" style="width: 18rem;">
+                    <img class="card-img-top" src="assets/smart-parking.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text text-center">SMART PARKING SYSTEM
+                        </p>
+                    </div>
+                </div>
+                <div class="card card-product" style="width: 18rem;">
+                        <img class="card-img-top" src="assets/smart-hospital.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-text text-center">SMART HOSPITAL SYSTEM
+                            </p>
+                        </div>
+                    </div>
             </div>
 
         </div>
@@ -396,7 +333,11 @@
 
 
 
+    <!-- ========= Clients ========= -->
+    <div class="container-fluid main-section" id="products-mobile">
 
+    </div>
+    <!-- ========= End Clients ========= -->
     <!-- ========= Clients ========= -->
     <div class="container-fluid main-section" id="clients">
         <div class="container">
@@ -404,59 +345,23 @@
             <h6>Members of STVG</h6>
             <div class="flex-class delay-02s animated">
                 <div class="card card-product">
-                    <img class="card-img-top rounded-circle" src="assets/nakasan.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">Nakagawa Hidehiko</h5>
-                        <p class="card-text text-center">Japanese</p>
-                    </div>
-                </div>
-                <div class="card card-product">
                     <img class="card-img-top rounded-circle" src="assets/saitosan.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title text-center">James Bungo Saito</h5>
                         <p class="card-text text-center">Japanese</p>
                     </div>
                 </div>
-
+                <div class="card card-product">
+                    <img class="card-img-top rounded-circle" src="assets/nakasan.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Nakagawa Hidehiko</h5>
+                        <p class="card-text text-center">Japanese</p>
+                    </div>
+                </div>
             </div>
 
         </div>
     </div>
-
-
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("p6-mySlides");
-            var dots = document.getElementsByClassName("p6-dot");
-            if (n > slides.length) {
-                slideIndex = 1
-            }
-            if (n < 1) {
-                slideIndex = slides.length
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" p6-active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " p6-active";
-        }
-    </script>
     <!-- ========= End Clients ========= -->
 
 
