@@ -31,7 +31,6 @@ function animation_load() {
     var top_of_object_products = $(".flex-class").offset().top;
     var top_of_object_contact = $("#contact").offset().top;
     var top_of_object_clients = $("#clients").offset().top;
-    var top_of_object_industries = $("#industries").offset().top;
 
     var bottom_of_window = $(window).scrollTop() + $(window).height();
     /* If the object is completely visible in the window, fade it it */
@@ -55,12 +54,6 @@ function animation_load() {
       $("#clients").animate({ opacity: "1" });
       $(".flex-class").animate({ opacity: "1" });
       $(".flex-class").addClass("fadeInUp");
-    }
-
-    if (bottom_of_window > top_of_object_industries + 200) {
-      $("#industries").animate({ opacity: "1" });
-      $(".industry-top").addClass("fadeInLeft");
-      $(".industry-bottom").addClass("fadeInUp");
     }
   });
 }

@@ -247,11 +247,11 @@ html {
 #collapsibleNavbar ul li{
   padding-top:10px;
 }
-#collapsibleNavbar ul li:nth-child(4){
+#collapsibleNavbar ul li:nth-child(3){
   padding-top: 0px ;
 }
 @media only screen and (max-width: 768px){
-  #collapsibleNavbar ul li:nth-child(4){
+  #collapsibleNavbar ul li:nth-child(3){
       display: none;
   }
   #logo-company{
@@ -408,7 +408,7 @@ html {
   opacity: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 #products .card-product {
